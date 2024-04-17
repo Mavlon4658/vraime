@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url("./NoiGroteskFix-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url("./NoiGroteskFix-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url("./NoiGroteskFix-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
