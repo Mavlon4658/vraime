@@ -401,6 +401,9 @@ body {
   font-weight: bold;
   text-decoration: underline;
 }
+.discover__card_item a:last-child {
+  margin-top: 13px;
+}
 .discover__card_item:hover {
   z-index: 3;
 }
@@ -537,7 +540,7 @@ body {
   height: 100%;
   border-radius: 20px;
 }
-.question__form p {
+.question__form a {
   color: #fff;
   opacity: 0.5;
   font-size: 10px;

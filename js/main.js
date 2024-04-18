@@ -13,3 +13,27 @@ reviewCard.forEach(card => {
         btn.classList.add('hidden');
     }
 })
+
+var video = document.getElementById("video");
+
+window.addEventListener("load", function(event) {
+    // setTimeout(() => {
+    //     video.autoplay = true;
+    //     video.load();
+    //     console.log(video);
+    // }, 2000);
+});
+
+
+Email.send({
+    Host: "smtp.gmail.com",
+    Username: "mavlon4658@gmail.com",
+    Password: "mavlonbek465899ab",
+    To: 'mavlon4658.1@gmail.com',
+    From: "mavlon4658@gmail.com",
+    Subject: "Sending Email using javascript",
+    Body: "Well that was easy!!",
+})
+    .then(function (message) {
+        // alert("mail sent successfully")
+    });
