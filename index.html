@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Font -->
     <link rel="stylesheet" href="./fonts/sttyle.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -21,6 +23,10 @@
         <!-- Header -->
         <header class="header">
             <div class="main_container header__container">
+                <button class="bars">
+                    <img src="./images/bars.svg" alt="">
+                </button>
+
                 <a href="/" class="header__logo">
                     <img src="./images/logotip.svg" alt="">
                 </a>
@@ -43,6 +49,38 @@
         </header>
         <!-- Header end -->
 
+        <!-- Mobile menu -->
+        <section class="mobile_menu">
+            <div class="mobile_menu__bg"></div>
+            <div class="mobile_menu__content">
+                <div class="mobile_menu__head">
+                    <a href="#" class="logo">
+                        <img src="./images/logotip.svg" alt="">
+                    </a>
+
+                    <button class="mobile_menu__close">
+                        <img src="./images/times.svg" alt="">
+                    </button>
+                </div>
+
+                <ul class="mobile_menu__navs">
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Mobile menu end -->
+
         <main>
 
             <!-- Home -->
@@ -57,8 +95,12 @@
             <section class="discover">
 
                 <img src="./images/discover_bg_1.png" alt="" class="discover__bg_1">
+                <img src="./images/discover_bg_1_md.png" alt="" class="discover__bg_1 md">
+                <img src="./images/discover_bg_1_sm.png" alt="" class="discover__bg_1 sm">
                 <img src="./images/discover_bg_2.png" alt="" class="discover__bg_2">
+                <img src="./images/discover_bg_2_sm.png" alt="" class="discover__bg_2 sm">
                 <img src="./images/discover_bg_3.png" alt="" class="discover__bg_3">
+                <img src="./images/discover_bg_3_sm.png" alt="" class="discover__bg_3 sm">
                 <img src="./images/discover_bg_4.png" alt="" class="discover__bg_4">
 
                 <div class="main_container discover__container_top">
@@ -235,19 +277,19 @@
                 <div class="main_container why__container">
                     <h2 class="main_title why__title">Почему именно <span>Vraime</span></h2>
                     <ul>
-                        <li>
+                        <li data-aos="fade-up" data-aos-delay="200">
                             <img src="./images/why_icon_1.svg" alt="">
                             <p>Традиции производства</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-delay="400">
                             <img src="./images/why_icon_2.svg" alt="">
                             <p>Сырье и технологии</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-delay="600">
                             <img src="./images/why_icon_3.svg" alt="">
                             <p>Насыщенный вкус кофе</p>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-delay="800">
                             <img src="./images/why_icon_4.svg" alt="">
                             <p>Разнообразие ароматов</p>
                         </li>
@@ -260,6 +302,7 @@
             <section class="buy">
                 <div class="main_container buy__container">
                     <img src="./images/buy_bg.png" alt="" class="buy__bg">
+                    <img src="./images/buy_bg_md.png" alt="" class="buy__bg md">
                     <h2 class="main_title buy__title">Где купить</h2>
                     <ul>
                         <li>
@@ -346,6 +389,7 @@
                                 <a href="./pdf/blank.pdf" download>Нажимая кнопку «Отправить», Вы принимаете условия Пользовательского соглашения</a>
                             </div>
                         </div>
+                        <a href="./pdf/blank.pdf" download class="md_link">Нажимая кнопку «Отправить», Вы принимаете условия Пользовательского соглашения</a>
                     </form>
 
                     <form action="" class="subscribe">
@@ -410,8 +454,8 @@
                     </li>
                 </ul>
                 <p class="footer__text">
-                    ИП Борисенко А.А., ОГРНИП 317784700343577
-                    email: <a href="mailto:mail@coffeevraime.ru">mail@coffeevraime.ru</a>
+                    <span>ИП Борисенко А.А., ОГРНИП 317784700343577</span>
+                    <span>email: <a href="mailto:mail@coffeevraime.ru">mail@coffeevraime.ru</a></span>
                 </p>
             </div>
         </footer>
@@ -421,7 +465,8 @@
     </div>
 
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS file -->

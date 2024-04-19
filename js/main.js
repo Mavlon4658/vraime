@@ -1,6 +1,13 @@
+AOS.init();
+
 let reviewSwiper = new Swiper('.review .swiper', {
     slidesPerView: 'auto',
-    spaceBetween: 30,
+    spaceBetween: 10,
+    breakpoints: {
+        992: {
+            spaceBetween: 30,
+        }
+    }
 })
 
 let reviewCard = document.querySelectorAll('.review__card')
@@ -14,26 +21,16 @@ reviewCard.forEach(card => {
     }
 })
 
-var video = document.getElementById("video");
+let bars = document.querySelector('.bars');
+let menuClose = document.querySelector('.mobile_menu__close')
+let mobileMenu = document.querySelector('.mobile_menu');
 
-window.addEventListener("load", function(event) {
-    // setTimeout(() => {
-    //     video.autoplay = true;
-    //     video.load();
-    //     console.log(video);
-    // }, 2000);
-});
+bars.onclick = () => {
+    mobileMenu.classList.remove('end-active');
+    mobileMenu.classList.add('active');
+}
 
-
-Email.send({
-    Host: "smtp.gmail.com",
-    Username: "mavlon4658@gmail.com",
-    Password: "mavlonbek465899ab",
-    To: 'mavlon4658.1@gmail.com',
-    From: "mavlon4658@gmail.com",
-    Subject: "Sending Email using javascript",
-    Body: "Well that was easy!!",
-})
-    .then(function (message) {
-        // alert("mail sent successfully")
-    });
+menuClose.onclick = () => {
+    mobileMenu.classList.remove('active');
+    mobileMenu.classList.add('end-active');
+}
