@@ -848,11 +848,13 @@ body {
     height: auto;
     overflow: visible;
     padding: 79px 25px 20px 21px;
+    min-height: 234.8px;
   }
 }
 @media screen and (max-width: 576px) {
   .discover__card_item .content {
     padding: 69px 17px 23px 15px;
+    min-height: 242px;
   }
 }
 .discover__card_item h3 {
@@ -935,6 +937,21 @@ body {
     margin-top: 10px;
   }
 }
+.discover__card_item span {
+  width: 100%;
+  text-align: center;
+  color: #A41919;
+  font-size: 14px;
+  position: absolute;
+  bottom: 36px;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+@media screen and (max-width: 1240px) {
+  .discover__card_item span {
+    opacity: 1;
+  }
+}
 .discover__card_item:hover {
   z-index: 3;
 }
@@ -944,6 +961,9 @@ body {
   }
 }
 .discover__card_item:hover p {
+  opacity: 1;
+}
+.discover__card_item:hover span {
   opacity: 1;
 }
 
@@ -1447,7 +1467,7 @@ body {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 700px) {
   .footer__navs {
     flex-direction: column;
     gap: 20px;
