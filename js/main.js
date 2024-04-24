@@ -34,9 +34,3 @@ menuClose.onclick = () => {
     mobileMenu.classList.remove('active');
     mobileMenu.classList.add('end-active');
 }
-
-let toTop = document.querySelector('.to_top');
-toTop.onclick = e => {
-    e.preventDefault();
-    window.scrollTo(0, 0);
-}
