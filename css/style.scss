@@ -409,7 +409,7 @@ body {
 
 // Discover 
 .discover {
-    padding: 34px 0 150px;
+    padding: 34px 0 105px;
     position: relative;
 
     @include media(1240) {
@@ -1014,6 +1014,30 @@ body {
     }
 }
 // Discover  end
+
+// More catalog
+.more_catalog {
+    margin-bottom: 105px;
+
+    @include media(1240) {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .btn_green {
+        width: auto;
+        display: inline-flex;
+        padding: 15px 48px;
+        height: auto;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+// More catalog end
 
 // Why
 .why {
